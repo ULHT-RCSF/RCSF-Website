@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Redes: Cloud-Ran{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">Cloud-Ran</h1>
+<h2 style="text-align: center;">Saiba tudo sobre o Cloud-Ran</h2>
+<div style="text-align: center;">
+    <img src="{{url_for('static', filename='gsmr.jpg')}}" alt="gsm-r">
+</div>
+<h1 style="background-color:red;text-align:center">Características e curiosidades</h1>
+<ul>
+    <li>
+        <p style="font-size:20px">GSM-R é a sigla para Global System for mobile comunications-Railway</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Surge em 2000, após 10 anos de colaboração de várias companhias ferroviárias
+            europeias.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">É usado para transmitir informação entre os comboios e os centros de comando.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Permite a comunicação entre o comboio e as estações.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Permite a transmissão de anúncios de Long Line Public Address (LLPA) para estações na
+            linha.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Quando um comboio passa por uma <a
+                href="https://www.trainlogistic.com/Imagens/Comboios/varias/Varios(08).jpg" target="_blank">baliza de
+                controlo</a>, o GSM-R permite que ele transmite sua nova posição e a sua velocidade, e recebe de volta a
+            concordância (ou desacordo)
+            para entrar na próxima linha e a sua nova velocidade máxima. Tornando assim os sinais da via redundantes.
+        </p>
+    </li>
+    <li>
+        <p style="font-size:20px">Se a 11 de Setembro de 1985 já existisse GSM-R, o <a
+                href="https://pt.wikipedia.org/wiki/Desastre_ferroviário_de_Moimenta-Alcafache" target="_blank">desastre
+                de Moimenta-Alcafache</a>, o maior acidente ferroviário que ocorreu em Portugal, poderia muito
+            possivelmente ter sido evitado, uma vez que, teria sido possível comunicar com os comboios que circulavam em sentidos contrários na linha
+            ao mesmo tempo.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Opera na frequência dos 900 MHz e 1800MHz, que também é a mesma do GSM.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Usa a modulação GMSK (Gaussian Minimum Shift Keying).</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Na Europa a frequência de Uplink é entre 876 e 880 MHz e a frequência de Downlink é
+            entre 921 e 925 MHz.</p>
+    </li>
+</ul>
+<h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">GSM-R usa TDMA (Time Division Multiple Access).</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O TDMA divide um canal de frequência em até oito intervalos de tempo
+                    distintos.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Cada frame de TDMA têm um período de 4,615ms.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O GSM-R divide cada frame de TDMA (200 kHz) em 8 time-slots que carregam 148
+                    bits de infromação.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Cada utilizador ocupa um espaço de tempo específico na transmissão.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='tdma.jpg')}}" alt="tdma">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Débitos</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">O GSM-R permite transmissões de até 270,833 kbps</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='debitoGSMR.jpg')}}"
+            alt="debito"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Cobertura</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">A distância entre antenas de GSM-R é de 7 a 15km.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">As antenas são montadas junto à linha férrea, normalmente ao pé de estações.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='antenaGSMR.jpg')}}"
+            alt="cobertura"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Planeamento Celular</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">No GSM-R a cobertura
+                    é obtida por meio de uma série de pequenas áreas ou células de cobertura adjacentes e sobrepostas.
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">No GSM-R a padrão do planeamento celular é linear ao contrário do GSM que é
+                    bidimensional, pois o seu objectivo é cobrir uma região geográfica.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img
+            src="{{url_for('static', filename='planeamentoCelularGSMR.jpg')}}" alt="planeamentoCelular"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Reutilização de frequências</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Como o número de frequências é finito, as frequências são reutilizadas de
+                    forma a que haja uma distância de separação entre as células na mesma frequência para evitar
+                    interferências.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img
+            src="{{url_for('static', filename='reutilizacaoFreqGSMR.jpg')}}" alt="reutilizacaoFreq"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Tipos de serviços</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Comunicação entre comboios e o centro de controlo.
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">ASCI (Advanced Speech Call Items)
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">VGCS (Voice Group Call Service)
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">VBS (Voice Broadcast Service)
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">REC (Railway Emergency Call)
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">SEC (Shunting Emergency Call)
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='servicosGSMR.jpg')}}"
+            alt="reutilizacaoFreq"></div>
+</div>
+{% endblock %}
