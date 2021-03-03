@@ -8,7 +8,8 @@ Website criado no âmbito da cadeira de Redes de Comunicações Sem Fios.
 Universidade Lusófona 2021<br />
 
 
-Para correr:<br />
-- Aceder a um terminal na pasta.<br />
-- Executar o comando .\virtual\bin\activate<br />
+Para correr em windows:<br />
+- Aceder com um terminal à pasta do repositorio.<br />
+- Executar o comando .\virtual\Scripts\activate<br />
 - Executar o comando flaskrun<br />
+
