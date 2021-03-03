@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        header {
+            background-color: red;
+            grid-area: header;
+        }
+
+        nav {
+            background-color: white;
+            grid-area: nav;
+        }
+
+        main {
+            background-color: white;
+            grid-area: main;
+        }
+
+        footer {
+            background-color: white;
+            grid-area: footer;
+        }
+
+        body {
+            background-color: black;
+            padding: 10px;
+            grid-gap: 10px;
+
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+
+            grid-template-columns: 15% 85%;
+            grid-template-rows: 100px 1fr 70px;
+            grid-template-areas:
+                'header header'
+                'nav main'
+                'footer footer';
+        }
+
+        body>* {
+            padding: 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 2px 5px;
+            text-decoration: none;
+            white-space: nowrap;
+            color: rgb(0, 0, 0);
+        }
+
+        nav>ul>li ul {
+            display: none;
+        }
+
+        nav>ul li:hover>ul {
+            display: block;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Redes de comunicações sem fios</h1>
+    </header>
+
+    <nav>
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="index">Introdução</a> </li>
+            <li><a href="gsm">GSM</a></li>
+            <li><a href="gsm-r">GSM-R</a></li>
+            <li><a href="umts">UMTS</a></li>
+            <li><a href="lte">LTE</a></li>
+            <li><a href="">5G</a></li>
+            <li><a href="">Wi-Fi</a></li>
+            <li><a href="sobre">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        © Redes de Comunicações Sem Fios 2021
+    </footer>
+
+</body>
+
+</html>

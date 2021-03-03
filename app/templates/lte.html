@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Redes: LTE{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">LTE</h1>
+<h2 style="text-align: center;">Saiba tudo sobre o LTE, também conhecido por 4G</h2>
+<div style="text-align: center;">
+    <img src="{{url_for('static', filename='lte.jpg')}}" alt="lte">
+</div>
+<h1 style="background-color:red;text-align:center">Características e curiosidades</h1>
+<ul>
+    <li>
+        <p style="font-size:20px">LTE (Long Term Evolution).</p>
+    </li>
+    <li>
+        <p style="font-size:20px">4ª Geração de comunicações moveis.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Lancada oficialmente ao publico em 2010.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Existe tambem o 4G+ ou tambem conhecido como LTE Advanced. A principal diferença para o 4G normal é que os dispositivos compativeis com LTE Advanced ligam-se simultaneamente a mais de uma frequência ou faixa de espectro.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Esta tecnologia é conhecida também como agregação de portadora (carrier aggregation), que aumenta a capacidade de transferência entre o dispositivo do utilizador e a antena da operadora.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">O 4G tem uma melhoria significativa nas chamadas de Video com suporte para qualidade até FullHD(1080p). Tambem se deu a introdução ao streaming de video em altas resoluções(Youtube, Netflix, etc).</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Permite roaming internacional.</p>
+    </li>
+</ul>
+<h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">LTE usa OFDMA(Orthogonal Frequency Division Multiple Access) para download.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">LTE usa SC-FDMA(Single Carrier Frequency Division Multiple Access) para upload</p>
+            </li>
+            <li>
+                <p style="font-size:20px">OFDMA(Orthogonal Frequency Division Multiple Access - algo como "Acesso Múltiplo por Divisão Ortogonal da Frequência"), que distribui as informações da transmissões entre diversos subconjuntos paralelos de portadoras.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">SC-FDMA(Single Carrier Frequency Division Multiple Access - algo como "FDMA de Portadora Única"), que é uma especificação semelhante ao OFDMA, mas que consegue reduzir o consumo de potência, fazendo com que o uso de energia por parte dos dispositivos conectados também diminua. Apesar do nome, o SC-FDMA também pode utilizar subconjuntos de portadoras.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='ofdma.jpg')}}" alt="ofdma">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Débitos</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Pode alcançar ate 300 Mb/s de download e 75 Mb/s de upload dependendo das características do telemóvel.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Estas velocidades são possíveis, entre outros motivos, graças a uma largura de banda entre 5 MHz e 20 MHz que opcionalmente consegue chegar aos 40 MHz.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='debito2.jpg')}}" alt="debito"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Tipos de serviços</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Streaming em FullHD(Youtube, Netflix, etc)</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Voz e Video em FullHD(1080p)</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Dados</p>
+            </li>
+            <li>
+                <p style="font-size:20px">SMS e MMS</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='servicos2.jpg')}}" alt="servicos"></div>
+</div>
+<h1 style="background-color:red;text-align:center">O que é 4,5G?</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">O 4,5G nada mais é do que o 4G+ nas suas melhores condições.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O nome 4,5G é um nome comercial para a tecnologia LTE-Advanced-Pro.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">A tecnologia permite maior velocidade de acesso à internet, que pode ultrapassar as centenas de megabits por segundo.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">4,5G representa três características técnicas na rede: </p>
+                <p style="font-size:20px">Agregação de portadora: combinar três diferentes faixas de frequência, chegando ao mínimo de 30 MHz de espectro;</p>
+                <p style="font-size:20px">MIMO 4×4: a tecnologia MIMO significa “multiple-input multiple-output”, ou seja, múltiplas entradas e múltiplas saídas. O recurso permite que a comunicação entre o dispositivo do cliente e operadora seja feita utilizando 4 antenas de transmissão e outras 4 antenas de recepção;</p>
+                <p style="font-size:20px">Modulação 256QAM: esquema de modulação que permite maior eficiência espectral, transmitindo mais bits de dados a cada tempo. Permite que os dispositivos conectados transmitam um volume muito maior de dados simultaneamente.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='4,5g.jpg')}}" alt="servicos"></div>
+</div>
+{% endblock %}

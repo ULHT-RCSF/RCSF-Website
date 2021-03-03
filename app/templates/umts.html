@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Redes: UMTS{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">UMTS</h1>
+<h2 style="text-align: center;">Saiba tudo sobre o UMTS, também conhecido por 3G</h2>
+<div style="text-align: center;">
+    <img src="{{url_for('static', filename='umts.jpg')}}" alt="umts">
+</div>
+<h1 style="background-color:red;text-align:center">Características e curiosidades</h1>
+<ul>
+    <li>
+        <p style="font-size:20px">UMTS (Universal Mobile Telecommunication System).</p>
+    </li>
+    <li>
+        <p style="font-size:20px">3ª Geração de comunicações moveis.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Lançada oficialmente ao publico em 2002.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Usa bandas com a mesma capacidade para upload e download.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">O UMTS usa a tecnologia W-CDMA (Wideband Code Multiple Access), o W-CDMA é um padrão para uso de radiofrequência baseado nos mesmos conceitos de comunicação do CDMA.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Para alem da melhoria na qualidade das chamadas de voz permitiu a introdução das chamadas de video. E tambem grande melhoria de navegação na internet.</p>
+        </p>
+    </li>
+    <li>
+        <p style="font-size:20px">Permite roaming internacional.</p>
+    </li>
+</ul>
+<h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">UMTS usa W-CDMA(Wide-Band Code-Division Multiple Access).</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O W-CDMA possui, essencialmente, dois modos de funcionamento: o TDD (Time Division Duplex - algo como "Duplexação por Divisão de Tempo"), onde as atividades de download e upload compartilham a mesma portadora, mas em intervalos distintos; e o FDD (Frequency Division Duplex - algo como "Duplexação por Divisão de Frequência"), que utiliza portadoras diferentes para cada um destas atividades.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O uso de TDD e FDD faz com que a transmissão seja mais eficiente, uma vez que cada modo é mais adequado a determinadas situações. Por exemplo, o TDD se mostra mais vantajoso em aplicações "assimétricas", como serviços Web, onde o número de dados enviados normalmente é diferente da quantidade recebida.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='w-cdma.jpg')}}" alt="w-cdma">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Débitos</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">No UMTS é possivel atingir velocidades de até 2 Mb/s para download e para upload.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Estas velocidades são possíveis, entre outros motivos, graças ao uso de uma portadora de 5 MHz.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='debito1.jpg')}}" alt="debito"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Tipos de serviços</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Voz e Video</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Dados</p>
+            </li>
+            <li>
+                <p style="font-size:20px">SMS e MMS</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='servicos1.jpg')}}" alt="servicos"></div>
+</div>
+{% endblock %}

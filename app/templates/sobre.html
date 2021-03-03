@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Redes: Sobre{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">Sobre este website</h1>
+<p>Este website está a ser desenvolvido no âmbito da cadeira de Redes de Comunicações Sem Fios, que é lecionada pelo Professor
+    Lúcio Studer Ferreira <br>
+    e pertence ao 3º ano do curso de Engenharia Informática, Redes e Telecomunicações da Universidade Lusófona.</p>
+<p>Este website foi realizado por Ricardo Santos, Tiago Gomes, Héricles Semedo e Armando Carruagem.</p>
+
+<div style="text-align: center;">
+    <img src="{{url_for('static', filename='lusofona-logo.jpg')}}" alt="lusofona">
+</div>
+{% endblock %}

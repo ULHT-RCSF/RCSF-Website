@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Redes: GSM{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">GSM</h1>
+<h2 style="text-align: center;">Saiba tudo sobre o GSM, também conhecido por 2G</h2>
+<div style="text-align: center;">
+    <img src="{{url_for('static', filename='gsm.jpg')}}" alt="gsm">
+</div>
+<h1 style="background-color:red;text-align:center">Características e curiosidades</h1>
+<ul>
+    <li>
+        <p style="font-size:20px">GSM é a sigla para Global System for mobile comunications</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Surgiu na Bell Laboratories no início dos anos 70.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Na Finlândia a 1 de Julho de 1991 foi feita a primeira chamada GSM do mundo usando uma
+            rede construída pela
+            Nokia e
+            pela Siemens e operada pela Radiolinja.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">É o standard mais aceite nas telecomunicações e está implementado globalmente. </p>
+    </li>
+    <li>
+        <p style="font-size:20px">Em 2010 tinha 90% de market share.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Opera na frequência dos 900 MHz e 1800MHz.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Grande qualidade de chamadas de voz.</p>
+        </p>
+    </li>
+    <li>
+        <p style="font-size:20px">Possui roaming internacional.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Possui eficiência espectral melhorada.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">As estações base e os telemóveis são de baixo custo.</p>
+    </li>
+</ul>
+<h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">GSM usa TDMA (Time Division Multiple Access).</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O TDMA divide um canal de frequência em até oito intervalos de tempo
+                    distintos.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Cada utilizador ocupa um espaço de tempo específico na transmissão.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O GSM divide cada canal de 200 kHz em 8 time-slots de 25kHz.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='tdma.jpg')}}" alt="tdma">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Débitos</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">O GSM permite 9.6 kbit/s downlink e uplink.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Existem “evoluções” do GSM, como o EDGE que permite 300kbits/s e o EDGE
+                    Evolution que permite 1
+                    Mbit/s.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='debito.jpg')}}"
+            alt="debito"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Cobertura</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">A distância máxima do GSM é de 35km devido a restrições técnicas do TDMA.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Quando o terreno é montanhoso a distância varia entre 5 e 8km.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='cobertura.jpg')}}"
+            alt="cobertura"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Planeamento Celular</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">A cada estação base é atribuída um parte dos canais disponíveis e as estações
+                    bases por perto são
+                    atribuídos
+                    grupos de canais diferentes para diminuir a interferência.
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">Uplink e downlink estão separados por uma banda de guarda de 20 MHz.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img
+            src="{{url_for('static', filename='planeamentoCelular.jpg')}}" alt="planeamentoCelular"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Reutilização de frequências</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Como o número de frequências é finito, as frequências são reutilizadas de
+                    forma a que haja uma distância de separação entre as células na mesma frequência para evitar
+                    interferências.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='reutilizacaoFreq.jpg')}}"
+            alt="reutilizacaoFreq"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Tipos de serviços</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Voz
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">Dados
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">SMS e MMS
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='servicos.jpg')}}"
+            alt="reutilizacaoFreq"></div>
+</div>
+{% endblock %}
