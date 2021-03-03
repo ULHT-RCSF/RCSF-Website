@@ -10,6 +10,6 @@ Universidade Lusófona 2021<br />
 
 Para correr em windows:<br />
 - Aceder com um terminal à pasta do repositorio.<br />
-- Executar o comando .\virtual\Scripts\activate<br />
+- Executar o comando .\virtual-windows\Scripts\activate<br />
 - Executar o comando flaskrun<br />
 
