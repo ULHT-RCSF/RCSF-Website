@@ -75,7 +75,7 @@
                 <p style="font-size:20px">O GSM permite 9.6 kbit/s downlink e uplink.</p>
             </li>
             <li>
-                <p style="font-size:20px">Existem “evoluções” do GSM, como o EDGE que permite 300kbits/s e o EDGE
+                <p style="font-size:20px">Existem “evoluções” do GSM, como o EDGE que permite 300 kbit/s e o EDGE
                     Evolution que permite 1
                     Mbit/s.</p>
             </li>
@@ -104,7 +104,7 @@
     <div style="width: 600px; float: left;">
         <ul>
             <li>
-                <p style="font-size:20px">A cada estação base é atribuída um parte dos canais disponíveis e as estações
+                <p style="font-size:20px">A cada estação base é atribuída um parte dos canais disponíveis e às estações
                     bases por perto são
                     atribuídos
                     grupos de canais diferentes para diminuir a interferência.
@@ -155,6 +155,64 @@
     <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='servicos.jpg')}}"
             alt="reutilizacaoFreq"></div>
 </div>
+<h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        color: black;
+        background-color: red;
+        text-align: center;
+    }
+
+    table {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<table>
+    <tr>
+        <td colspan=1 style="visibility:collapse">Hide</td>
+        <th>GSM</th>
+    </tr>
+    <tr>
+        <th>Bandas de frequência</th>
+        <td>900 e 1800 MHz</td>
+    </tr>
+    <tr>
+        <th>Largura de banda</th>
+        <td>200 kHz</td>
+    </tr>
+    <tr>
+        <th>Modulação</th>
+        <td>TDMA</td>
+    </tr>
+    <tr>
+        <th>Débitos</th>
+        <td>9,6 kbit/s</td>
+    </tr>
+    <tr>
+        <th>Cobertura típica</th>
+        <td>1 até 30 km</td>
+    </tr>
+    <tr>
+        <th>Planeamento Celular</th>
+        <td>A cada estação base é atribuída um parte dos canais disponíveis<br />e às estações bases por perto são
+            atribuídos grupos de canais diferentes.</td>
+    </tr>
+    <tr>
+        <th>Tipos de Serviços</th>
+        <td>Voz, SMS, MMS e Dados</td>
+    </tr>
+</table>
 <h1 style="background-color:red;text-align:center">Referências</h1>
 <p style="font-size:20px"><a href="https://en.wikipedia.org/wiki/Cell_site#Range"
         target="_blank">https://en.wikipedia.org/wiki/Cell_site#Range</a></p>
