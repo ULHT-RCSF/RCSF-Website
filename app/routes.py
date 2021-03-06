@@ -27,6 +27,10 @@ def umts():
 def lte():
     return render_template('lte.html')
 
+@app.route('/wi_fi')
+def wi_fi():
+    return render_template('wi_fi.html')
+
 
 @app.route("/sobre")
 def sobre():

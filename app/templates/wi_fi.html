@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Redes: WI-FI{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">WI-FI - 802.11</h1>
+<h2 style="text-align: center">Saiba tudo sobre as redes WI-FI</h2>
+
+    <div style="text-align: center;font-size: 1vw">
+        <img src="{{url_for('static', filename='wifi_logo.png')}}" alt="wifi_logo">
+    </div>
+    <h1 style="background-color:red;text-align:center">Conceito e história</h1>
+    <ul>
+        <li>
+            <p style="font-size:20px">WI-FI é da família das redes sem fio, baseadas no protocolo IEEE 802.11.</p>
+        </li>
+        <li>
+            <p style="font-size:20px">É controlada pela trademark Wi-Fi Alliance, que é responsável pela cerificação 
+                de dispositivos e tecnologias que implementam a rede Wi-Fi.</p>
+        </li>
+        <li>
+            <p style="font-size:20px">A primeira versão do protocolo 802.11 foi lançada 1997, com velocidade de ligação de até 2 Mbit/s. 
+                Em 1999 foi atualizada para 802.11b que permitia velocidades de até 11Mb/s.</p>
+        </li>
+        <li>
+            <p style="font-size:20px">A rede continuou a evoluir até a versão mais recente 802.11ax ou de Wi-Fi 6.</p>
+        </li>
+        <br>
+    </ul>
+
+    <h1 style="background-color:red;text-align:center">Funcionamento das redes WI-FI</h1>
+    <ul>
+        <li>
+            <p style="font-size:20px">O padrão 802.11 estabelece as normas para a criação e para o uso das redes sem fio. 
+                A transmissão deste tipo de rede é feita por sinais de radiofrequência, que se propagam pelo ar, 
+                conseguindo atingir uma cobertura de até centenas de metros.</p>
+        </li>
+        <li>
+            <p style="font-size:20px">Wi-Fi opera dentro das faixas ISM (industrial, Scientific and Medical) de frequência com 
+                os seguintes intervalos: 902 MHz - 928 MHz; 2,4 GHz - 2,485 GHz e 5,15 GHz - 5,825 GHz. 
+                As redes Wi-Fi utilizam só as duas ultimas faixas (dependendo das normas da entidade reguladora do país e da versão do 
+                padrão 802.11).</p>
+        </li>
+        <br>
+    </ul>
+
+    <h1 style="background-color:red;text-align:center">Terminologia e arquitetura</h1>
+    <div style="width: 100%; overflow: hidden;">
+        <div>
+            <ul>
+                <li>
+                    <p style="font-size:20px">Normalmente usa-se o termo “station” (STA) para referir aos dispositivos “clientes”
+                        que vão se conectar a um Access Point (AP) ou ponto de acesso  que como o proprio nome indica, fornece acesso à rede. 
+                        Quando vários STAs conectam a um mesmo AP, tem-se uma rede denominada de Basic Service Set (BSS). </p>
+                </li>
+                <li>
+                    <p style="font-size:20px">Cada rede vai ter um SSID (Service Set Identifier). SSID é basicamente o nome dado a cada rede sem fio.</p>
+                </li>
+            </ul>
+        </div>
+        <div style="text-align: center;"><img src="{{url_for('static', filename='wifi_BSS.png')}}" alt="wifi_BSS"></div>
+    </div>
+
+    <h1 style="background-color:red;text-align:center">Versões do protocolo 802.11</h1>
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  802.11 (original)  +++</h2>
+    <div style="width: 100%; overflow: hidden;">
+        <div>
+            <ul>
+                <li>
+                    <p style="font-size:20px">A primeira versão do padrão 802.11 foi lançada em 1997.  
+                        Por ser uma tecnologia de radiofrequência, o IEEE (Institute of Electrical and Electronic Engineers) 
+                        determinou que o padrão operasse no intervalo de frequências entre 2,4 GHz e 2,4835 GHz, uma das 
+                        faixas ISM. Sua taxa de transmissão de dados é de 1 Mb/s ou 2 Mb/s (megabits por segundo).</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  802.11b  +++</h2>
+    <div style="width: 100%; overflow: hidden;">
+        <div>
+            <ul>
+                <li>
+                    <p style="font-size:20px">A atualização do padrão 802.11 que recebeu o nome 802.11b, 
+                        foi lançada em 1999 e era capaz estabelecer conexões nas seguintes velocidades de transmissão: 
+                        1 Mb/s, 2 Mb/s, 5,5 Mb/s e 11 Mb/s. </p>
+                </li>
+                <li>
+                    <p style="font-size:20px">O intervalo de frequências é o mesmo utilizado pelo 802.11 
+                        original (entre 2,4 GHz e 2,4835 GHz).</p>
+                </li>
+                <li">
+                    <p style="font-size:20px">A área de cobertura de uma transmissão 802.11b teoricamente pode chegar até aos
+                        400 metros em ambientes abertos e até 50 metros em lugares fechados (tais como escritórios e residências). </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  802.11a  +++</h2>
+    <div style="width: 100%; overflow: hidden;font-size: 1vw">
+        <div>
+            <ul>
+                <li>
+                    <p style="font-size:20px">O padrão 802.11a foi disponibilizado no final do ano de 1999, quase na mesma época 
+                        que a versão 802.11b. Sua principal característica é a possibilidade de operar com taxas de transmissão de
+                        dados no seguintes valores: 6 Mb/s, 9 Mb/s, 12 Mb/s, 18 Mb/s, 24 Mb/s, 36 Mb/s, 48 Mb/s e 54 Mb/s. </p>
+                </li>
+                <li>
+                    <p style="font-size:20px">O alcance geográfico de sua transmissão é de cerca de 50 metros. A sua frequência de operação
+                        é diferente do padrão 802.11 original: 5 GHz, com canais de 20 MHz dentro desta faixa.</p>
+                </li>
+                <li>
+                    <p style="font-size:20px">É a primeira versão a usar Orthogonal Frequency Division Multiplexing (OFDM). Nela, a informação 
+                        a ser trafegada é dividida em vários pequenos conjuntos de dados que são transmitidos simultaneamente em diferentes frequências. </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  802.11g  +++</h2>
+    <div style="width: 100%; overflow: hidden;font-size: 1vw">
+        <div>
+            <ul>
+                <li>
+                    <p style="font-size:20px">O padrão 802.11g foi disponibilizado em 2003. O principal atrativo do padrão 802.11g é poder trabalhar com 
+                        taxas de transmissão de até 54 Mb/s, assim como acontece com o padrão 802.11a mas operando com frequências na faixa de 2,4 GHz (canais de 20 MHz).</p>
+                </li>
+                <li>
+                    <p style="font-size:20px">Possui praticamente o mesmo poder de cobertura do seu antecessor, o padrão 802.11b e a técnica de acesso multiplo utilizada também é o OFDM.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  802.11n  +++</h2>
+    <div style="width: 100%; overflow: hidden;font-size: 1vw">
+        <div>
+            <ul>
+                <li>
+                    <p style="font-size:20px">O desenvolvimento da especificação 802.11n se iniciou em 2004 e foi finalizado 
+                        em setembro de 2009. Tem como principal característica o uso de um esquema chamado Multiple-Input Multiple-Output (MIMO),
+                        combinado com o OFDM, que aumenta consideravelmente as taxas de transferência.</p>
+                </li>
+                <li>
+                    <p style="font-size:20px">Em relação à frequência, o padrão 802.11n pode trabalhar com as faixas de 2,4 GHz e 5 GHz e cada canal 
+                        dentro dessas faixas possui, por padrão, largura de 40 MHz. Alguns estudos apontam que sua área de cobertura pode passar de 400 metros. </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  802.11ac  +++</h2>
+    <div style="width: 100%; overflow: hidden;font-size: 1vw">
+        <div>
+            <ul>
+                <li>
+                    <p style="font-size:20px">O padrão 802.11ac, começou a ser desenvolvido em 2011 mas obteve 
+                        a aprovação final somente em 2014. Opera nas faixas de 2,4 GHz e 5 GHz e cada canal dentro
+                        dessas faixas possui, por padrão, largura de 40 MHz. Estudos apontam que que é capaz de garantir 
+                        uma cobertura superior a 400 metros.</p>
+                </li>
+                <li>
+                    <p style="font-size:20px">A principal vantagem do 802.11ac é a sua velocidade, estimada em até 433 Mb/s 
+                        no modo mais simples. Mas, teoricamente, pode superar os 6 Gb/s.</p>
+                </li>
+                <li>
+                    <p style="font-size:20px">Também chamada de 5G WiFi trabalha na frequência de 5 GHz, sendo que, dentro desta faixa,
+                        cada canal pode ter, por padrão, largura de 80 MHz (160 MHz como opcional).</p>
+                </li>
+                <li>
+                    <p style="font-size:20px">O padrão implementa técnicas mais avançadas de modulação e o esquema MU-MIMO (Multi-User MIMO),
+                        que permite transmissão e recepção de sinal de vários terminais, como se estes trabalhassem de maneira colaborativa, 
+                        na mesma frequência. Implementa também Beamforming, que é uma tecnologia que permite ao aparelho transmissor (como um roteador) 
+                        "avaliar" a comunicação com um dispositivo cliente para otimizar a transmissão em sua direção.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  802.11ax  +++</h2> 
+    <div style="width: 100%; overflow: hidden;font-size: 1vw">
+        <div>
+            <ul>
+                <li>
+                    <p style="font-size:20px">O padrão Wi-Fi 802.11ax é de ultima geração, também conhecido como Wi-Fi 6. 
+                        Pretende garantir que os pontos de acesso suportem mais clientes em ambientes densos e oferecer 
+                        uma melhor experiência em redes LAN sem fios típicas.</p>
+                </li>
+                <li>
+                    <p style="font-size:20px">Usa modulação mais densa do QAM (Quadrature Amplitude Modulation) 1024, 
+                        possibilitando um grande aumento de velocidade e usa a tecnica OFDMA (Orthogonal Frequency Division Multiple Access), 
+                        para redução de overhead e latência.</p>
+                </li>
+                <li>
+                    <p style="font-size:20px">O objetivo do novo padrão é quadruplicar a velocidade do padrão 802.11ac, atingindo picos de 10,53 Gbps na banda de 5 GHz de frequência.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  802.11ac vs 802.11ax  +++</h2> 
+    <div style="width: 100%; overflow: hidden;font-size: 1vw">
+        <div style="text-align: center;font-size: 1vw">
+            <img src="{{url_for('static', filename='ax_vs_ac.png')}}" alt="ax_vs_ac">
+        </div>
+    </div>
+
+    <h2 style="background-color:rgb(248, 147, 147);text-align:center"> +++  Tabela comparativa das versões 802.11  +++</h2> 
+    <div style="width: 100%; overflow: hidden;font-size: 1vw">
+        <div style="text-align: center;font-size: 1vw">
+            <img src="{{url_for('static', filename='wifi_table.png')}}" alt="wifi_table">
+        </div>
+    </div>
+{% endblock %}
