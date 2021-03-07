@@ -29,9 +29,6 @@
         <p style="font-size:20px">Em 2010 tinha 90% de market share.</p>
     </li>
     <li>
-        <p style="font-size:20px">Opera na frequência dos 900 MHz e 1800MHz.</p>
-    </li>
-    <li>
         <p style="font-size:20px">Grande qualidade de chamadas de voz.</p>
         </p>
     </li>
@@ -44,13 +41,40 @@
     <li>
         <p style="font-size:20px">As estações base e os telemóveis são de baixo custo.</p>
     </li>
+    <li>
+        <p style="font-size:20px">Opera na frequência dos 900 MHz e 1800MHz.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Usa a modulação GMSK (Gaussian Minimum Shift Keying).</p>
+    </li>
 </ul>
+<h1 style="background-color:red;text-align:center">Arquitectura de uma rede GSM</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">O BTS cria uma estrutura celular e está ligado ao BSC que o controla.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O telemóvel que se encontra numa célula pode comunicar com o resto da rede através do BTS.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O BSC é responsável pela alocação de frequências de rádio, medições de potência e sinal e também pelo handover entre células.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O MSC é responsável pelo roteamento de chamadas de voz e SMS, configura a conexão comutada por circuito de ponta a ponta entre os assinantes e lida com serviços móveis, como registro, autenticação, atualização de localização e handovers Inter BSC-Intra MSC.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='GSM_arquitectura.jpg')}}"
+            alt="debito"></div>
+</div>
 <h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
         <ul>
             <li>
-                <p style="font-size:20px">GSM usa TDMA (Time Division Multiple Access).</p>
+                <p style="font-size:20px">O GSM usa TDMA (Time Division Multiple Access).</p>
             </li>
             <li>
                 <p style="font-size:20px">O TDMA divide um canal de frequência em até oito intervalos de tempo
@@ -72,12 +96,10 @@
     <div style="width: 600px; float: left;">
         <ul>
             <li>
-                <p style="font-size:20px">O GSM permite 9.6 kbit/s downlink e uplink.</p>
+                <p style="font-size:20px">O GSM permite 9.6 kbit/s de downlink e uplink.</p>
             </li>
             <li>
-                <p style="font-size:20px">Existem “evoluções” do GSM, como o EDGE que permite 300 kbit/s e o EDGE
-                    Evolution que permite 1
-                    Mbit/s.</p>
+                <p style="font-size:20px">Existem “evoluções” do GSM, como o EDGE que permite 384 kbit/s</p>
             </li>
         </ul>
     </div>
@@ -182,34 +204,61 @@
     <tr>
         <td colspan=1 style="visibility:collapse">Hide</td>
         <th>GSM</th>
+        <th>GPRS</th>
+        <th>EDGE</th>
     </tr>
     <tr>
         <th>Bandas de frequência</th>
+        <td>900 e 1800 MHz</td>
+        <td>900 e 1800 MHz</td>
         <td>900 e 1800 MHz</td>
     </tr>
     <tr>
         <th>Largura de banda</th>
         <td>200 kHz</td>
+        <td>200 kHz</td>
+        <td>200 kHz</td>
+    </tr>
+    <tr>
+        <th>Técnica de acesso</th>
+        <td>TDMA</td>
+        <td>TDMA</td>
+        <td>TDMA</td>
     </tr>
     <tr>
         <th>Modulação</th>
-        <td>TDMA</td>
+        <td>GMSK</td>
+        <td>GMSK</td>
+        <td>GMSK, 8PSK</td>
     </tr>
     <tr>
         <th>Débitos</th>
         <td>9,6 kbit/s</td>
+        <td>35 kbit/s a 171 kbit/s</td>
+        <td>120 kbit/s a 384 kbit/s</td>
     </tr>
     <tr>
         <th>Cobertura típica</th>
         <td>1 até 30 km</td>
+        <td>1 até 30 km</td>
+        <td>1 até 30 km</td>
     </tr>
     <tr>
         <th>Planeamento Celular</th>
-        <td>A cada estação base é atribuída um parte dos canais disponíveis<br />e às estações bases por perto são
-            atribuídos grupos de canais diferentes.</td>
+        <td>A cada estação base é<br /> atribuída um parte<br /> dos canais disponíveise às<br /> estações bases por
+            perto<br /> são
+            atribuídos grupos<br /> de canais diferentes.</td>
+        <td>A cada estação base é<br /> atribuída um parte<br /> dos canais disponíveise às<br /> estações bases por
+            perto<br /> são
+            atribuídos grupos<br /> de canais diferentes.</td>
+        <td>A cada estação base é<br /> atribuída um parte<br /> dos canais disponíveise às<br /> estações bases por
+            perto<br /> são
+            atribuídos grupos<br /> de canais diferentes.</td>
     </tr>
     <tr>
         <th>Tipos de Serviços</th>
+        <td>Voz, SMS, MMS e Dados</td>
+        <td>Voz, SMS, MMS e Dados</td>
         <td>Voz, SMS, MMS e Dados</td>
     </tr>
 </table>
@@ -222,6 +271,16 @@
         target="_blank">https://www.tutorialspoint.com/gsm/gsm_overview.htm</a></p>
 <p style="font-size:20px"><a href="https://pt.slideshare.net/deepakecrbs/gsm-frequency-planning"
         target="_blank">https://pt.slideshare.net/deepakecrbs/gsm-frequency-planning</a></p>
+<p style="font-size:20px"><a
+        href="https://www.electronics-notes.com/articles/connectivity/2g-gprs/what-is-gprs-tutorial.php"
+        target="_blank">https://www.electronics-notes.com/articles/connectivity/2g-gprs/what-is-gprs-tutorial.php</a>
+</p>
+<p style="font-size:20px"><a href="http://literature.cdn.keysight.com/litweb/pdf/ads2001/vsaedgemeas/gsmunder2.html"
+        target="_blank">http://literature.cdn.keysight.com/litweb/pdf/ads2001/vsaedgemeas/gsmunder2.html</a>
+</p>
+<p style="font-size:20px"><a href="https://umutcanbolat.com/2g-gsm-cellular-network-basics/"
+    target="_blank">https://umutcanbolat.com/2g-gsm-cellular-network-basics/</a>
+</p>
 <p style="font-size:20px">Slides de Complementos de Redes Do Professor Lúcio Studer</p>
 <p style="font-size:20px">Google Imagens</p>
 {% endblock %}
