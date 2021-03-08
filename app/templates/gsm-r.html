@@ -44,16 +44,43 @@
             ao mesmo tempo.</p>
     </li>
     <li>
-        <p style="font-size:20px">Opera na frequência dos 900 MHz e 1800MHz, que também é a mesma do GSM.</p>
+        <p style="font-size:20px">Opera nas frequências entre 876-880 MHz e 921-925 MHz, próximas do GSM.</p>
     </li>
     <li>
         <p style="font-size:20px">Usa a modulação GMSK (Gaussian Minimum Shift Keying).</p>
     </li>
-    <li>
-        <p style="font-size:20px">Na Europa a frequência de Uplink é entre 876 e 880 MHz e a frequência de Downlink é
-            entre 921 e 925 MHz.</p>
-    </li>
 </ul>
+<h1 style="background-color:red;text-align:center">Arquitectura de uma rede GSM-R</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">O BTS (Base transceiver station) cria uma estrutura celular e está ligado ao
+                    BSC que o controla.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O comboio que se encontra numa célula pode comunicar com o resto da rede
+                    através do BTS.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O BSC (Base station controller) é responsável pela alocação de frequências de
+                    rádio, medições de
+                    potência e sinal e também pelo handover entre células.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O MSC (Mobile switching center) é responsável pelo roteamento e lida com
+                    handovers Inter BSC-Intra MSC.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O NSS (Network switching subsystem) é a parte principal do MSC e faz a ligação
+                    entre os centros de comando, manutenção e outras redes GSM.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img
+            src="{{url_for('static', filename='GSM-R_arquitectura.jpg')}}" alt="debito"></div>
+</div>
 <h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
@@ -66,11 +93,11 @@
                     distintos.</p>
             </li>
             <li>
-                <p style="font-size:20px">Cada frame de TDMA têm um período de 4,615ms.</p>
+                <p style="font-size:20px">Cada frame de TDMA têm um período de 4,615 ms.</p>
             </li>
             <li>
                 <p style="font-size:20px">O GSM-R divide cada frame de TDMA (200 kHz) em 8 time-slots que carregam 148
-                    bits de infromação.</p>
+                    bits de informação.</p>
             </li>
             <li>
                 <p style="font-size:20px">Cada utilizador ocupa um espaço de tempo específico na transmissão.</p>
@@ -85,7 +112,7 @@
     <div style="width: 600px; float: left;">
         <ul>
             <li>
-                <p style="font-size:20px">O GSM-R permite transmissões de até 270,833 kbps</p>
+                <p style="font-size:20px">O GSM-R permite transmissões de até 270,833 kbit/s</p>
             </li>
         </ul>
     </div>
@@ -97,7 +124,7 @@
     <div style="width: 600px; float: left;">
         <ul>
             <li>
-                <p style="font-size:20px">A distância entre antenas de GSM-R é de 7 a 15km.</p>
+                <p style="font-size:20px">A distância entre antenas de GSM-R é de 7 a 15 km.</p>
             </li>
             <li>
                 <p style="font-size:20px">As antenas são montadas junto à linha férrea, normalmente ao pé de estações.
@@ -118,8 +145,8 @@
                 </p>
             </li>
             <li>
-                <p style="font-size:20px">No GSM-R a padrão do planeamento celular é linear ao contrário do GSM que é
-                    bidimensional, pois o seu objectivo é cobrir uma região geográfica.
+                <p style="font-size:20px">No GSM-R o padrão do planeamento celular é linear, ao contrário do GSM que é
+                    bidimensional, pois o seu objectivo é cobrir a linha férrea.
                 </p>
             </li>
         </ul>
@@ -175,6 +202,74 @@
     <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='servicosGSMR.jpg')}}"
             alt="reutilizacaoFreq"></div>
 </div>
+<h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        color: black;
+        background-color: red;
+        text-align: center;
+    }
+
+    table {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<table>
+    <tr>
+        <td colspan=1 style="visibility:collapse">Hide</td>
+        <th>GSM-R</th>
+    </tr>
+    <tr>
+        <th>Bandas de frequência</th>
+        <td>876-880 MHz e 921-925 MHz</td>
+    </tr>
+    <tr>
+        <th>Largura de banda</th>
+        <td>200 kHz</td>
+    </tr>
+    <tr>
+        <th>Técnica de acesso</th>
+        <td>TDMA</td>
+    </tr>
+    <tr>
+        <th>Modulação</th>
+        <td>GMSK</td>
+    </tr>
+    <tr>
+        <th>Débitos</th>
+        <td>270,833 kbit/s</td>
+    </tr>
+    <tr>
+        <th>Cobertura típica</th>
+        <td>7 até 15 km</td>
+    </tr>
+    <tr>
+        <th>Planeamento Celular</th>
+        <td>A cada estação base é atribuída um parte dos canais disponíveis e às<br /> estações bases por
+            perto são atribuídos grupos de canais diferentes.</td>
+    </tr>
+    <tr>
+        <th>Tipos de Serviços</th>
+        <td>Comunicação entre comboios e o centro de controlo<br />
+            ASCI (Advanced Speech Call Items<br />
+            VGCS (Voice Group Call Service)<br />
+            VBS (Voice Broadcast Service)<br />
+            REC (Railway Emergency Call)<br />
+            SEC (Shunting Emergency Call)<br />
+        </td>
+    </tr>
+</table>
 <h1 style="background-color:red;text-align:center">Referências</h1>
 <p style="font-size:20px"><a href="https://en.wikipedia.org/wiki/GSM-R"
         target="_blank">https://en.wikipedia.org/wiki/GSM-R</a></p>
@@ -185,8 +280,13 @@
         href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiGzdm-vZfvAhUbQEEAHcWYA3gQFjACegQIAhAD&url=https%3A%2F%2Ffenix.tecnico.ulisboa.pt%2FdownloadFile%2F563345090416553%2FThesis_PedroD_final.pdf&usg=AOvVaw3FrwVIBCu5Qjf_E-H1tzeQ"
         target="_blank">https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiGzdm-vZfvAhUbQEEAHcWYA3gQFjACegQIAhAD&url=https%3A%2F%2Ffenix.tecnico.ulisboa.pt%2FdownloadFile%2F563345090416553%2FThesis_PedroD_final.pdf&usg=AOvVaw3FrwVIBCu5Qjf_E-H1tzeQ</a>
 </p>
-<p style="font-size:20px"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiGzdm-vZfvAhUbQEEAHcWYA3gQFjABegQIARAD&url=https%3A%2F%2Ffenix.tecnico.ulisboa.pt%2FdownloadFile%2F1689244997258501%2FDissertacao%2520Andre%2520Ribeiro(pos%2520defesa).pdf&usg=AOvVaw0G2dONFEh7vI01M_Zs5Lr3"
-        target="_blank">https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiGzdm-vZfvAhUbQEEAHcWYA3gQFjABegQIARAD&url=https%3A%2F%2Ffenix.tecnico.ulisboa.pt%2FdownloadFile%2F1689244997258501%2FDissertacao%2520Andre%2520Ribeiro(pos%2520defesa).pdf&usg=AOvVaw0G2dONFEh7vI01M_Zs5Lr3</a></p>
+<p style="font-size:20px"><a
+        href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiGzdm-vZfvAhUbQEEAHcWYA3gQFjABegQIARAD&url=https%3A%2F%2Ffenix.tecnico.ulisboa.pt%2FdownloadFile%2F1689244997258501%2FDissertacao%2520Andre%2520Ribeiro(pos%2520defesa).pdf&usg=AOvVaw0G2dONFEh7vI01M_Zs5Lr3"
+        target="_blank">https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiGzdm-vZfvAhUbQEEAHcWYA3gQFjABegQIARAD&url=https%3A%2F%2Ffenix.tecnico.ulisboa.pt%2FdownloadFile%2F1689244997258501%2FDissertacao%2520Andre%2520Ribeiro(pos%2520defesa).pdf&usg=AOvVaw0G2dONFEh7vI01M_Zs5Lr3</a>
+</p>
+<p style="font-size:20px"><a href="https://uic.org/rail-system/gsm-r/"
+        target="_blank">https://uic.org/rail-system/gsm-r/</a>
+</p>
 <p style="font-size:20px">Slides de Complementos de Redes Do Professor Lúcio Studer</p>
 <p style="font-size:20px">Google Imagens</p>
 {% endblock %}
