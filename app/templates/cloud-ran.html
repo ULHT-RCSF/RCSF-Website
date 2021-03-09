@@ -1,0 +1,316 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Redes: Cloud-Ran{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">Cloud-Ran</h1>
+<h2 style="text-align: center;">Saiba tudo sobre o Cloud-Ran</h2>
+<div style="text-align: center;margin: auto">
+    <img src="{{url_for('static', filename='cloud-ran.jpg')}}" alt="cloud-ran">
+</div>
+<h1 style="background-color:red;text-align:center">Características e curiosidades</h1>
+<ul>
+    <li>
+        <p style="font-size:20px">Foi introduzido pelo China Mobile Research Institute em Abril de 2010.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">O Cloud-Ran é uma arquitectura centralizada baseada em computação na nuvem para redes
+            de acesso de rádio.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Suporta Wi-Fi, GSM, 3G, LTE, 5G e padrões de comunicação sem fio futuros.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Aplica tecnologia de rede de data centers para permitir uma rede de interconexão de
+            baixo custo, alta confiabilidade, baixa latência e alta largura de banda no pool BBU.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Utiliza plataformas abertas e tecnologia de virtualização em tempo real enraizada na
+            computação em nuvem para obter alocação dinâmica de recursos compartilhados.</p>
+    </li>
+    <li>
+        <p style="font-size:20px;margin-right:20px">As redes Cloud-RAN são uma excelente alternativa, que oferece maior
+            controlo de
+            interferência, controlo de acesso e capacidade de gerenciamento, juntamente com maiores taxas de
+            transferência e capacidade.</p>
+    </li>
+</ul>
+<h1 style="background-color:red;text-align:center">Arquitectura de uma rede Cloud-Ran</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">O <a
+                        href="https://en.wikipedia.org/wiki/Remote_radio_head#/media/File:CableFree_LTE_Remote_Radio_Head_(RRH).jpg"
+                        target="_blank">RRH</a> (Remote Radio Head) é composto por uma antena e uma pequena unidade de
+                    rádio.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O BBU agrega as funções de banda base de uma BS (Base Station), bem como
+                    os de controlo e gestão.<br>
+                    É baseado em software e pode ser qualquer tecnologia de rádio (GSM, 3G, LTE, etc).</br>
+                    Pode ser instanceada em uma ou mais VM's (máquinas virtuais).</br>
+                    Múltiplos BBU podem ser agrupados, formando um BBU-pool.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Esta divisão da BS permite que se tenham RRHs baratos, pequenos e
+                    quase sem infraestrutura.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='cloud-ran_arquitectura.jpg')}}"
+            alt="Arquitectura"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Se a ligação for Wi-Fi é utilizado OFDM.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for GSM é utilizado TDMA.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for 3G é utilizado W-CDMA (TDD e FDD).</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for LTE é utilizado OFDMA e SC-FDMA.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='cloud-ran_tecnicaAcesso.jpg')}}"
+            alt="cloud-ran">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Frequências Utilizadas</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Se a ligação for Wi-Fi a frequência utilizada é 2,4Ghz e 5GHz.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for GSM a frequência utilizada é 900 MHz e 1800MHz.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for 3G a frequência utilizada é 900 MHz e 2100MHz.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for LTE a frequência utilizada é 800 MHz, 1800MHz e 2600MHz.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='cloud-ran_frequencia.jpg')}}"
+            alt="cloud-ran">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Largura de Banda</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Se a ligação for Wi-Fi a largura de banda é de 20 MHz.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for GSM a largura de banda é de 200 kHz.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for 3G a largura de banda é de 5 MHz.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for LTE a largura de banda é de 5 MHz a 20 MHz.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='cloud-ran_larguraDeBanda.jpg')}}"
+            alt="cloud-ran">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Modulações Utilizadas</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Se a ligação for Wi-Fi a modulação utilizada é 256-QAM (802.11ac).</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for GSM a modulação utilizada é GMSK (Gaussian Minimum Shift Keying).</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for 3G a modulação utilizada é QPSK (Quadrature Phase Shift Keying).</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for LTE a modulação utilizada é QPSK, 16-QAM e 64-QAM.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='cloud-ran_modulacoes.jpg')}}"
+            alt="cloud-ran">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Débitos</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Se a ligação for Wi-Fi o débito máximo é 9.6 Gbit/s.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for GSM o débito máximo é 9,6 kbit/s.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for 3G o débito máximo é 2 Mbit/s.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Se a ligação for LTE o débito máximo é 300 Mbit/s.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='debitoGSMR.jpg')}}"
+            alt="debito"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Cobertura</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Para uma ligação GSM e 3G a distância máxima é entre 40 a 80km.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">A distância máxima para uma ligação de LTE é de até 20km.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">A distância máxima para uma ligação de Wi-Fi é de até 250m.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='antena_c-ran.jpg')}}"
+            alt="cobertura"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Planeamento Celular</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">No Cloud-Ran a cobertura é obtida através das células que cada RRH cria.
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">Desta forma podem-se formar várias células, sem criar muita interferência pois
+                    todos os RRH são controlados pelo BBU.
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">A expansão da rede é também simples basta adicionar RRHs.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img
+            src="{{url_for('static', filename='cloud-ran_planeamentoCelular.jpg')}}" alt="planeamentoCelular"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Tipos de serviços</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px;margin: auto; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Voz
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">SMS e MMS
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">Dados
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">Streaming em HD
+                </p>
+            </li>
+            <li>
+                <p style="font-size:20px">Internet de alta velocidade
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='servicos-Cloud-Ran.jpg')}}"
+            alt="reutilizacaoFreq"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        color: black;
+        background-color: red;
+        text-align: center;
+    }
+
+    table {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<table>
+    <tr>
+        <td colspan=1 style="visibility:collapse">Hide</td>
+        <th>Cloud-Ran</th>
+    </tr>
+    <tr>
+        <th>Bandas de frequência</th>
+        <td>Depende do tipo de ligação do RRH, pode ser 2,4Ghz e 5GHz (Wi-Fi), 900 MHz e 1800MHz (GSM), 900 MHz e
+            2100MHz (UMTS)</br> e 800 MHz, 1800MHz e 2600MHz (LTE).</td>
+    </tr>
+    <tr>
+        <th>Largura de banda</th>
+        <td>Depende do tipo de ligação do RRH, pode ser de 20 MHz (Wi-Fi), 200 kHz (GSM), 5 MH (UMTS), 5 MHz a 20 MHz (LTE)</td>
+    </tr>
+    <tr>
+        <th>Técnica de acesso</th>
+        <td>Depende do tipo de ligação do RRH, pode ser OFDM (Wi-Fi), TDMA (GSM), W-CDMA (UMTS), OFDMA e SC-FDMA (LTE).
+        </td>
+    </tr>
+    <tr>
+        <th>Modulação</th>
+        <td>Depende do tipo de ligação do RRH, pode ser 1024-QAM (Wi-Fi - 802.11ax), GMSK (GSM), QPSK (UMTS), QPSK, 16-QAM e 64-QAM (LTE).</td>
+    </tr>
+    <tr>
+        <th>Débitos</th>
+        <td>Depende do tipo de ligação do RRH, pode ser 9.6 Gbit/s (Wi-Fi - 802.11ax), 9,6 kbit/s (GSM), 2 Mbit/s (UMTS) e 300 Mbit/s (LTE).
+        </td>
+    </tr>
+    <tr>
+        <th>Cobertura típica</th>
+        <td>Depende do tipo de ligação do RRH, pode ser de até 250m (Wi-Fi), 40 a 80km (GSM e UMTS) e 20km (LTE).</td>
+    </tr>
+    <tr>
+        <th>Planeamento Celular</th>
+        <td>No Cloud-Ran a cobertura é obtida através das células que cada RRH cria.</td>
+    </tr>
+    <tr>
+        <th>Tipos de Serviços</th>
+        <td>Voz, SMS, MMS, Dados, Streaming em HD e Internet de alta velocidade.</td>
+    </tr>
+</table>
+<h1 style="background-color:red;text-align:center">Referências</h1>
+<p style="font-size:20px"><a href="https://en.wikipedia.org/wiki/C-RAN"
+        target="_blank">https://en.wikipedia.org/wiki/C-RAN/</a></p>
+<p style="font-size:20px"><a href="http://www.kriativ-tech.com/wp-content/uploads/2018/02/LUCIOFERREIRAEDICAO8.pdf"
+        target="_blank">http://www.kriativ-tech.com/wp-content/uploads/2018/02/LUCIOFERREIRAEDICAO8.pdf</a></p>
+<p style="font-size:20px"><a href="https://www.artizanetworks.com/resources/tutorials/cran.html"
+        target="_blank">https://www.artizanetworks.com/resources/tutorials/cran.html</a></p>
+<p style="font-size:20px"><a href="https://www.fujitsu.com/us/imagesgig5/CloudRANwp.pdf"
+        target="_blank">https://www.fujitsu.com/us/imagesgig5/CloudRANwp.pdf</a></p>
+<p style="font-size:20px">Google Imagens</p>
+{% endblock %}

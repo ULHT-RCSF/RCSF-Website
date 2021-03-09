@@ -4,21 +4,38 @@
 {% endblock %}
 {% block content %}
 <h1 style="background-color:red;text-align:center">Introdução</h1>
-
-<p style="font-size:20px">Neste website apresentaremos vários sistemas de comunicações sem fios existentes.</p>
-
-<div style="text-align: center;">
-    <img src="{{url_for('static', filename='antena.jpg')}}" alt="antena">
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Neste website apresentaremos vários sistemas de comunicações sem fios
+                    existentes.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Iremos abordar as principais características dos sistemas, bem como a parte
+                    técnica dos mesmos.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Utilize o menu lateral para saber mais sobre um dos sistemas.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Para saber mais sobre o site explore a página sobre.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='antena.jpg')}}"
+            alt="antena">
+    </div>
 </div>
-
 <h1 style="background-color:red;text-align:center">Sistemas de Comunicações Sem Fios que poderá conhecer no nosso
     website</h1>
 <ol>
     <li style="font-size:20px"><a href="gsm">GSM</a></li>
     <li style="font-size:20px"><a href="gsm-r">GSM-R</a></li>
-    <li  style="font-size:20px"><a href="umts">UMTS</a></li>
-    <li  style="font-size:20px"><a href="lte">LTE</a></li>
-    <li  style="font-size:20px"><a href="">5G</a></li>
-    <li  style="font-size:20px"><a href="wi_fi">Wi-Fi</a></li>
+    <li style="font-size:20px"><a href="umts">UMTS</a></li>
+    <li style="font-size:20px"><a href="lte">LTE</a></li>
+    <li style="font-size:20px"><a href="">5G</a></li>
+    <li style="font-size:20px"><a href="wi_fi">Wi-Fi</a></li>
+    <li style="font-size:20px"><a href="cloud_ran">Cloud-Ran</a></li>
 </ol>
 {% endblock %}

@@ -5,7 +5,7 @@
 {% block content %}
 <h1 style="background-color:red;text-align:center">GSM</h1>
 <h2 style="text-align: center;">Saiba tudo sobre o GSM, também conhecido por 2G</h2>
-<div style="text-align: center;">
+<div style="text-align: center;margin: auto">
     <img src="{{url_for('static', filename='gsm.jpg')}}" alt="gsm">
 </div>
 <h1 style="background-color:red;text-align:center">Características e curiosidades</h1>
@@ -17,7 +17,8 @@
         <p style="font-size:20px">Surgiu na Bell Laboratories no início dos anos 70.</p>
     </li>
     <li>
-        <p style="font-size:20px">Na Finlândia a 1 de Julho de 1991 foi feita a primeira chamada GSM do mundo usando uma
+        <p style="font-size:20px;margin-right:20px">Na Finlândia a 1 de Julho de 1991 foi feita a primeira chamada GSM
+            do mundo usando uma
             rede construída pela
             Nokia e
             pela Siemens e operada pela Radiolinja.</p>
@@ -50,28 +51,32 @@
 </ul>
 <h1 style="background-color:red;text-align:center">Arquitectura de uma rede GSM</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">O BTS cria uma estrutura celular e está ligado ao BSC que o controla.</p>
             </li>
             <li>
-                <p style="font-size:20px">O telemóvel que se encontra numa célula pode comunicar com o resto da rede através do BTS.</p>
+                <p style="font-size:20px">O telemóvel que se encontra numa célula pode comunicar com o resto da rede
+                    através do BTS.</p>
             </li>
             <li>
-                <p style="font-size:20px">O BSC é responsável pela alocação de frequências de rádio, medições de potência e sinal e também pelo handover entre células.</p>
+                <p style="font-size:20px">O BSC é responsável pela alocação de frequências de rádio, medições de
+                    potência e sinal e também pelo handover entre células.</p>
             </li>
             <li>
-                <p style="font-size:20px">O MSC é responsável pelo roteamento de chamadas de voz e SMS, configura a conexão comutada por circuito de ponta a ponta entre os assinantes e lida com serviços móveis, como registo, autenticação, atualização de localização e handovers Inter BSC-Intra MSC.</p>
+                <p style="font-size:20px">O MSC é responsável pelo roteamento de chamadas de voz e SMS, configura a
+                    conexão comutada por circuito de ponta a ponta entre os assinantes e lida com serviços móveis, como
+                    registo, autenticação, atualização de localização e handovers Inter BSC-Intra MSC.</p>
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='GSM_arquitectura.jpg')}}"
-            alt="debito"></div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='GSM_arquitectura.jpg')}}"
+            alt="Arquitectura"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">O GSM usa TDMA (Time Division Multiple Access).</p>
@@ -88,27 +93,27 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='tdma.jpg')}}" alt="tdma">
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='tdma.jpg')}}" alt="tdma">
     </div>
 </div>
 <h1 style="background-color:red;text-align:center">Débitos</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">O GSM permite 9.6 kbit/s de downlink e uplink.</p>
             </li>
             <li>
-                <p style="font-size:20px">Existem “evoluções” do GSM, como o EDGE que permite 384 kbit/s.</p>
+                <p style="font-size:20px">Existem “evoluções” do GSM, como o EDGE que permite 80 kbit/s.</p>
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='debito.jpg')}}"
-            alt="debito"></div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='debito.jpg')}}" alt="debito">
+    </div>
 </div>
 <h1 style="background-color:red;text-align:center">Cobertura</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">A distância máxima do GSM é de 35km devido a restrições técnicas do TDMA.</p>
@@ -118,12 +123,12 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='cobertura.jpg')}}"
+    <div style="margin: auto;;text-align: center"><img src="{{url_for('static', filename='cobertura.jpg')}}"
             alt="cobertura"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Planeamento Celular</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">A cada estação base é atribuída um parte dos canais disponíveis e às estações
@@ -138,12 +143,12 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img
-            src="{{url_for('static', filename='planeamentoCelular.jpg')}}" alt="planeamentoCelular"></div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='planeamentoCelular.jpg')}}"
+            alt="planeamentoCelular"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Reutilização de frequências</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">Como o número de frequências é finito, as frequências são reutilizadas de
@@ -153,28 +158,28 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='reutilizacaoFreq.jpg')}}"
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='reutilizacaoFreq.jpg')}}"
             alt="reutilizacaoFreq"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Tipos de serviços</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">Voz
                 </p>
             </li>
             <li>
-                <p style="font-size:20px">Dados
+                <p style="font-size:20px">SMS e MMS
                 </p>
             </li>
             <li>
-                <p style="font-size:20px">SMS e MMS
+                <p style="font-size:20px">Dados
                 </p>
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='servicos.jpg')}}"
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='servicos.jpg')}}"
             alt="reutilizacaoFreq"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
@@ -234,8 +239,8 @@
     <tr>
         <th>Débitos</th>
         <td>9,6 kbit/s</td>
-        <td>35 kbit/s a 171 kbit/s</td>
-        <td>120 kbit/s a 384 kbit/s</td>
+        <td>35 kbit/s</td>
+        <td>80 kbit/s</td>
     </tr>
     <tr>
         <th>Cobertura típica</th>
@@ -279,7 +284,10 @@
         target="_blank">http://literature.cdn.keysight.com/litweb/pdf/ads2001/vsaedgemeas/gsmunder2.html</a>
 </p>
 <p style="font-size:20px"><a href="https://umutcanbolat.com/2g-gsm-cellular-network-basics/"
-    target="_blank">https://umutcanbolat.com/2g-gsm-cellular-network-basics/</a>
+        target="_blank">https://umutcanbolat.com/2g-gsm-cellular-network-basics/</a>
+</p>
+<p style="font-size:20px"><a href="http://www.kriativ-tech.com/wp-content/uploads/2018/02/LUCIO-STUDER-1.pdf"
+        target="_blank">http://www.kriativ-tech.com/wp-content/uploads/2018/02/LUCIO-STUDER-1.pdf</a>
 </p>
 <p style="font-size:20px">Slides de Complementos de Redes Do Professor Lúcio Studer</p>
 <p style="font-size:20px">Google Imagens</p>

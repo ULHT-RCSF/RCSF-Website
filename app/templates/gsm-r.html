@@ -5,7 +5,7 @@
 {% block content %}
 <h1 style="background-color:red;text-align:center">GSM-R</h1>
 <h2 style="text-align: center;">Saiba tudo sobre o GSM-R</h2>
-<div style="text-align: center;">
+<div style="text-align: center;margin: auto">
     <img src="{{url_for('static', filename='gsmr.jpg')}}" alt="gsm-r">
 </div>
 <h1 style="background-color:red;text-align:center">Características e curiosidades</h1>
@@ -28,7 +28,7 @@
             linha.</p>
     </li>
     <li>
-        <p style="font-size:20px">Quando um comboio passa por uma <a
+        <p style="font-size:20px;margin-right:20px">Quando um comboio passa por uma <a
                 href="https://www.trainlogistic.com/Imagens/Comboios/varias/Varios(08).jpg" target="_blank">baliza de
                 controlo</a>, o GSM-R permite que ele transmite sua nova posição e a sua velocidade, e recebe de volta a
             concordância (ou desacordo)
@@ -36,7 +36,7 @@
         </p>
     </li>
     <li>
-        <p style="font-size:20px">Se a 11 de Setembro de 1985 já existisse GSM-R, o <a
+        <p style="font-size:20px;margin-right:20px">Se a 11 de Setembro de 1985 já existisse GSM-R, o <a
                 href="https://pt.wikipedia.org/wiki/Desastre_ferroviário_de_Moimenta-Alcafache" target="_blank">desastre
                 de Moimenta-Alcafache</a>, o maior acidente ferroviário que ocorreu em Portugal, poderia muito
             possivelmente ter sido evitado, uma vez que, teria sido possível comunicar com os comboios que circulavam em
@@ -52,7 +52,7 @@
 </ul>
 <h1 style="background-color:red;text-align:center">Arquitectura de uma rede GSM-R</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">O BTS (Base transceiver station) cria uma estrutura celular e está ligado ao
@@ -78,12 +78,12 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align: center"><img
-            src="{{url_for('static', filename='GSM-R_arquitectura.jpg')}}" alt="debito"></div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='GSM-R_arquitectura.jpg')}}"
+            alt="Arquitectura"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Técnica de Acesso Múltiplo utilizada</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">GSM-R usa TDMA (Time Division Multiple Access).</p>
@@ -104,24 +104,24 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='tdma.jpg')}}" alt="tdma">
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='tdma.jpg')}}" alt="tdma">
     </div>
 </div>
 <h1 style="background-color:red;text-align:center">Débitos</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">O GSM-R permite transmissões de até 270,833 kbit/s</p>
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='debitoGSMR.jpg')}}"
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='debitoGSMR.jpg')}}"
             alt="debito"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Cobertura</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">A distância entre antenas de GSM-R é de 7 a 15 km.</p>
@@ -132,12 +132,12 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='antenaGSMR.jpg')}}"
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='antenaGSMR.jpg')}}"
             alt="cobertura"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Planeamento Celular</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">No GSM-R a cobertura
@@ -151,12 +151,12 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img
-            src="{{url_for('static', filename='planeamentoCelularGSMR.jpg')}}" alt="planeamentoCelular"></div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='planeamentoCelularGSMR.jpg')}}"
+            alt="planeamentoCelular"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Reutilização de frequências</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">Como o número de frequências é finito, as frequências são reutilizadas de
@@ -166,12 +166,12 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img
-            src="{{url_for('static', filename='reutilizacaoFreqGSMR.jpg')}}" alt="reutilizacaoFreq"></div>
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='reutilizacaoFreqGSMR.jpg')}}"
+            alt="reutilizacaoFreq"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Tipos de serviços</h1>
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;">
+    <div style="width: 500px;margin: auto; float: left;">
         <ul>
             <li>
                 <p style="font-size:20px">Comunicação entre comboios e o centro de controlo.
@@ -199,7 +199,7 @@
             </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='servicosGSMR.jpg')}}"
+    <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='servicosGSMR.jpg')}}"
             alt="reutilizacaoFreq"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
