@@ -27,6 +27,10 @@ def umts():
 def lte():
     return render_template('lte.html')
 
+@app.route('/cincog')
+def cincog():
+    return render_template('cincog.html')
+
 
 @app.route('/wi_fi')
 def wi_fi():
