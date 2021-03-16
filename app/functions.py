@@ -41,7 +41,7 @@ def propagacaoEspacoLivre(freq):
     lista_pr = []
     lista_prx_min = []
     pe = 10 * log10(Pe)  # dBm
-    for d in range(1, 500+1):
+    for d in range(1, 1000+1):
         lista_d.append(d)
         lista_prx_min.append(-70)
         pr = pe + Ge - l_free_space(d/1000, freq) + Gr
