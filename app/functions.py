@@ -23,10 +23,10 @@ def atenuacaoEspacoLivre(freq):
     plt.ylabel('Atenuacao em Espaço livre [dB]')
     plt.grid()
     # criar nome para o novo gráfico
-    nome_grafico = f"plot_atenuacao_{freq}MHz_" + str(time.time()) + ".jpg"
+    nome_grafico = f"plot_atenuacao_{freq}_MHz_" + str(time.time()) + ".jpg"
     # apagar o gráfico antigo
     for filename in os.listdir('app/static/'):
-        if filename.startswith(f'plot_atenuacao_{freq}MHz_'):
+        if filename.startswith(f'plot_atenuacao_{freq}_MHz_'):
             os.remove('app/static/' + filename)
     plt.savefig('app/static/' + nome_grafico)
     plt.close()
@@ -54,7 +54,7 @@ def propagacaoEspacoLivre(freq):
     plt.grid()
     plt.show()
     # criar nome para o novo gráfico
-    nome_grafico = f"plot_propagacao_{freq}MHz_" + str(time.time()) + ".jpg"
+    nome_grafico = f"plot_propagacao_{freq}_MHz_" + str(time.time()) + ".jpg"
     # apagar o gráfico antigo
     for filename in os.listdir('app/static/'):
         if filename.startswith('plot_propagacao_{freq}MHz_'):
