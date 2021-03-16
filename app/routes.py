@@ -1,4 +1,5 @@
 from app import app
+from app import functions
 from flask import render_template, request
 
 
@@ -10,7 +11,9 @@ def index():
 
 @app.route('/gsm')
 def gsm():
-    return render_template('gsm.html')
+    nome_grafico_atenuacao = functions.atenuacaoEspacoLivre(900)
+    nome_grafico_propagacao = functions.propagacaoEspacoLivre(900)
+    return render_template("gsm.html", atenuacao=nome_grafico_atenuacao, propagacao=nome_grafico_propagacao)
 
 
 @app.route('/gsm-r')
@@ -26,6 +29,7 @@ def umts():
 @app.route('/lte')
 def lte():
     return render_template('lte.html')
+
 
 @app.route('/cincog')
 def cincog():
