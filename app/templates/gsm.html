@@ -183,9 +183,15 @@
             alt="reutilizacaoFreq"></div>
 </div>
 <h1 style="background-color:red;text-align:center">Atenuação em Espaço Livre</h1>
-<img src="{{ url_for('static', filename=atenuacao) }}" alt="gráfico_atenucao" />
+<figure class="half" style="text-align: center;margin: auto">
+    <img src="{{ url_for('static', filename=atenuacao_900) }}" alt="gráfico_atenucao_900" />
+    <img src="{{ url_for('static', filename=atenuacao_1800) }}" alt="gráfico_atenucao_1800" />
+</figure>
 <h1 style="background-color:red;text-align:center">Propagação em Espaço Livre</h1>
-<img src="{{ url_for('static', filename=propagacao) }}" alt="gráfico_propagacao" />
+<figure class="half" style="text-align: center;margin: auto">
+    <img src="{{ url_for('static', filename=propagacao_900) }}" alt="gráfico_propagacao_900" />
+    <img src="{{ url_for('static', filename=propagacao_1800) }}" alt="gráfico_propagacao_1800" />
+</figure>
 <h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
 <style>
     table,

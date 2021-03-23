@@ -46,9 +46,8 @@ def propagacaoEspacoLivre(freq):
         lista_prx_min.append(-70)
         pr = pe + Ge - l_free_space(d/1000, freq) + Gr
         lista_pr.append(pr)
-    plt.plot(lista_d, lista_pr, label="Prx")
+    plt.plot(lista_d, lista_pr)
     plt.title(f"{freq} MHz")
-    plt.legend()
     plt.xlabel('Distância [m]')
     plt.ylabel('Potência recebida [dBm]')
     plt.grid()
