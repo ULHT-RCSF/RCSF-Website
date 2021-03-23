@@ -56,7 +56,7 @@ def propagacaoEspacoLivre(freq):
     nome_grafico = f"plot_propagacao_{freq}_MHz_" + str(time.time()) + ".jpg"
     # apagar o gráfico antigo
     for filename in os.listdir('app/static/'):
-        if filename.startswith('plot_propagacao_{freq}MHz_'):
+        if filename.startswith(f'plot_propagacao_{freq}_MHz_'):
             os.remove('app/static/' + filename)
     plt.savefig('app/static/' + nome_grafico)
     plt.close()
