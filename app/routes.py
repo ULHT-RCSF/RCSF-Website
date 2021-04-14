@@ -31,6 +31,13 @@ def lte():
 def cincog():
     return render_template('cincog.html')
 
+@app.route('/tetra')
+def tetra():
+    return render_template('tetra.html')
+
+@app.route('/nfc')
+def nfc():
+    return render_template('nfc.html')    
 
 @app.route('/wi_fi')
 def wi_fi():

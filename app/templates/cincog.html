@@ -87,12 +87,98 @@
     </div>
     <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='user5g.jpg')}}" alt="user5g"></div>
 </div>
+</div>
+<h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        color: black;
+        background-color: red;
+        text-align: center;
+    }
+
+    table {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<table>
+    <tr>
+        <td colspan=1 style="visibility:collapse">Hide</td>
+        <th>5G</th>
+        <th>TETRA</th>
+        <th>NFC</th>
+    </tr>
+    <tr>
+        <th>Bandas de frequência</th>
+        <td>100 MHz a 38 GHz</td>
+        <td>380 MHz a 430 MHz</td>
+        <td>13.56 MHz</td>
+    </tr>
+    <tr>
+        <th>Largura de banda</th>
+        <td>40 GHz</td>
+        <td>25 kHz</td>
+        <td>200 kHz</td>
+    </tr>
+    <tr>
+        <th>Técnica de acesso</th>
+        <td>MIMO</td>
+        <td>TDMA</td>
+        <td>TDMA</td>
+    </tr>
+    <tr>
+        <th>Modulação</th>
+        <td>256-QAM</td>
+        <td>DQPSK</td>
+        <td>ASK, Manchester</td>
+    </tr>
+    <tr>
+        <th>Débitos</th>
+        <td>1,8 Gbit/s</td>
+        <td>28.8 kbit/s</td> 
+        <td>848 kbit/s</td>
+    </tr>
+    <tr>
+        <th>Cobertura típica</th>
+        <td>1 a centenas de metros</td>
+        <td>1 até 30 km</td>
+        <td>1 até 10 Cm</td>
+    </tr>
+    <tr>
+        <th>Planeamento Celular</th>
+        <td>A cada estação base é<br /> atribuída um parte<br /> dos canais disponíveis e às<br /> estações bases por
+            perto<br /> são
+            atribuídos grupos<br /> de canais diferentes.</td>
+        <td>São distribuídos por <br /> sub-sistemas  que compõem<br /> a rede TETRA, incluindo as<br /> estações rádio base.
+            <br />
+        
+            distribuídos a diversos<br /> a canais e dispositivos diferentes</td>
+        <td>Da estação base,<br /> às sub-estações<br /> até a unidade usuária<br />  
+    </tr>
+    <tr>
+        <th>Tipos de Serviços</th>
+        <td>Voz, SMS, MMS e Dados</td>
+        <td>Voz, SMS e Dados</td>
+        <td>Voz, SMS, MMS e Dados</td>
+    </tr>
+</table>
+</div>
 <h1 style="background-color:red;text-align:center">Há algum risco para nossa saúde?</h1>
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
         <ul>
             <li>
-                <p style="font-size:20px">O 5G faz uso da radiação eletromagnética, com um efeito semelhante às redes móveis 2G, 3G e 4G para o corpo humano. Em Portugal, o 5G irá usar sobretudo duas faixas de frequência: 700 MHz e 3,6 GHz.  .</p>
+                <p style="font-size:20px">O 5G faz uso da radiação eletromagnética, com um efeito semelhante às redes móveis 2G, 3G e 4G para o corpo humano. Em Portugal, o 5G irá usar sobretudo duas faixas de frequência: 700 MHz e 3,6 GHz .</p>
             </li>
             <li>
                 <p style="font-size:20px">A primeira é inferior às frequências utilizadas nas tecnologias móveis atuais e a segunda, embora mais elevada, não coloca os utilizadores em risco.</p>
@@ -100,14 +186,31 @@
             <li>
                 <p style="font-size:20px">Estudos verificaram que quanto mais elevadas são as frequências, menor é a penetração das ondas no tecido humano (a pele atua como um filtro para as ondas eletromagnéticas com frequências mais elevadas). Quanto mais elevadas as frequências, menor é a penetração das ondas, reduzindo a exposição dos órgãos internos.</p>
             </li>
-            <li>
-                <p style="font-size:20px"> </p>
-                <p style="font-size:20px"></p>
-                <p style="font-size:20px"></p>
-                <p style="font-size:20px"></p>.</p>
-            </li>
         </ul>
     </div>
-    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='radiaçao.jpg')}}" alt="radiaçao"></div>
+<div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='radiaçao.jpg')}}" alt="radiaçao"></div>
 </div>
+<h1 style="background-color:red;text-align:center">Referências</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px"><a href="https://pt.wikipedia.org/wiki/5G"
+                    target="_blank">https://pt.wikipedia.org/wiki/5G</a></p>
+            </li>
+            <li>
+                <p style="font-size:20px"><a href="https://www.thalesgroup.com"
+                    target="_blank">https://www.thalesgroup.com</a></p>
+            </li>
+            <li>
+                <p style="font-size:20px"><a href="https://www.apwportugal.pt/o-que-e-o-5g-e-como-vai-impactar-a-sua-vida/"
+                    target="_blank">https://www.apwportugal.pt/o-que-e-o-5g-e-como-vai-impactar-a-sua-vida/</a></p>
+            </li>
+          </li>
+          <p style="font-size:20px"><a href="https://pplware.sapo.pt/tutoriais/networking/novas-frequencias-5g/"
+            target="_blank"> https://pplware.sapo.pt/tutoriais/networking/novas-frequencias-5g/</a></p>
+        </li>
+      </li>      
+    </ul>
+    </div> 
 {% endblock %}

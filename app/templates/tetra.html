@@ -1,0 +1,187 @@
+{% extends 'base.html' %}w
+{% block header %}
+<h1>{% block title %}Redes: TETRA{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">TETRA</h1>
+<h2 style="text-align: center;">B  E  M  -  V I  D  O_____A______R   E   D   E_______T  E   T   R   A</h2>
+<div style="text-align: center;">
+    <img src="{{url_for('static', filename='tetra3.jpg')}}" alt="5G">
+</div>
+<h1 style="background-color:red;text-align:center">Definição e Enquadramento</h1>
+<ul>
+    <li>
+        <p style="font-size:20px">Definição: O TETRA (Terrestrial Trunked Rádio) é um sistema profissional de rádio móvel, com especificações para comunicação bilateral. é considerado o mais completo sistema para diversas aplicações.</p>
+    </li>
+    <li>
+        <p style="font-size:20px"> É reconhecido em todo o mundo por sua versatilidade, funcionalidade e segurança, tornando-se uma solução ideal para quem deseja elevar o patamar do seu sistema de comunicação, agregando funções ao radiocomunicador e reduzindo custos operacionais.</p>
+    </li>
+    <li>
+        <p style="font-size:20px"> O Tetra garante uma maior segurança na comunicação, visto que os aparelhos móveis, como as bases transmissoras, são mais potentes que os aparelhos celulares vulgares.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Num sistema trunking TETRA, podemos  realizar diferentes tipos de chamadas, as quais são  específicas para cada sistema: </p>
+    </li>
+    <li>
+        <p style="font-size:20px">Half-duplex -  O usuário pode falar e escutar, mas não ao mesmo tempo (experiência de uso semelhante aos aparelhos tipo "Nextel").</p>
+    </li>
+    <li>
+        <p style="font-size:20px"> Full-duplex – Neste tipo de chamada, o usuário é capaz de falar e escutar ao mesmo tempo, é uma experiência semelhante a uma chamada telefônica.</p>
+    </li>
+    <li>
+        <p style="font-size:20px"> A particularidade do full-duplex na tecnologia TETRA é que,  o usuário é capaz de falar com outros usuários da rede em comunicação privada, ou realizar chamadas telefônicas em ambientes onde aparelhos celulares não possuem uma rede de cobertura eficiente ou não podem ser utilizados (ambiente com atmosfera explosiva, por exemplo).</p>
+    </li>
+</ul>
+<h1 style="background-color:red;text-align:center">Aplicabilidade. </h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">A tecnologia TETRA garante uma qualidade de voz constante, ao contrário dos sistemas analógicos em que esta diminui à medida que é reduzida a intensidade do sinal. A tecnologia TDMA oferece uma utilização de espectro eficaz, uma vez que cada portadora rádio é dividida em quatro Time Slots .</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Adicionalmente o tráfego de voz e dados pode ser transportado simultaneamente .</p>
+            </li>
+            <li>
+                <p style="font-size:20px">A existência de uma interface específica definida permite a utilização no sistema de equipamento terminal de vários fornecedores. Esses terminais poderão inclusive comunicar entre si através da utilização do Modo Direto (DMO) caso seja necessário. </p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='tetraa.jpg')}}" alt="5g1">
+    </div>
+</div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='tetraaa.jpg')}}" alt="areas5G"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Vantangens</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px"> Segurança;</p>
+            </li>
+            <li>
+                <p style="font-size:20px">A segurança em TETRA é ampla, abrange desde os diferentes níveis de segurança aceitáveis em redes comerciais/industriais aos níveis exigidos para redes de segurança pública nacionais. Os mecanismos de segurança no padrão são atendidos através da Autenticação, Encriptação da Interface Aérea (AIE) e Criptografia fim-a-fim.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Diversos serviços;</p>
+            </li>
+            <li>
+                <p style="font-size:20px">erviços de voz, Chamada em Grupo (Chamada Geral),Chamada prioritária pré-emptiva (Chamada de Emergência),Retenção de Chamada, Chamada Prioritária, Designação de Número de Grupo Dinâmico (DGNA), Escuta Ambiente, Chamada Autorizada pelo Despachante, Área de Seleção, Entrada Tardia, Serviços de Dados, Serviços de Dados Curtos ePacote de Dados.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='tetra1.jpg')}}" alt="user5g"></div>
+
+</div>
+</div>
+<h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        color: black;
+        background-color: red;
+        text-align: center;
+    }
+
+    table {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<table>
+    <tr>
+        <td colspan=1 style="visibility:collapse">Hide</td>
+        <th>5G</th>
+        <th>TETRA</th>
+        <th>NFC</th>
+    </tr>
+    <tr>
+        <th>Bandas de frequência</th>
+        <td>100 MHz a 38 GHz</td>
+        <td>380 MHz a 430 MHz</td>
+        <td>13.56 MHz</td>
+    </tr>
+    <tr>
+        <th>Largura de banda</th>
+        <td>40 GHz</td>
+        <td>25 kHz</td>
+        <td>200 kHz</td>
+    </tr>
+    <tr>
+        <th>Técnica de acesso</th>
+        <td>MIMO</td>
+        <td>TDMA</td>
+        <td>TDMA</td>
+    </tr>
+    <tr>
+        <th>Modulação</th>
+        <td>256-QAM</td>
+        <td>DQPSK</td>
+        <td>ASK, Manchester</td>
+    </tr>
+    <tr>
+        <th>Débitos</th>
+        <td>1,8 Gbit/s</td>
+        <td>28.8 kbit/s</td> 
+        <td>848 kbit/s</td>
+    </tr>
+    <tr>
+        <th>Cobertura típica</th>
+        <td>1 a centenas de metros</td>
+        <td>1 até 30 km</td>
+        <td>1 até 10 Cm</td>
+    </tr>
+    <tr>
+        <th>Planeamento Celular</th>
+        <td>A cada estação base é<br /> atribuída um parte<br /> dos canais disponíveis e às<br /> estações bases por
+            perto<br /> são
+            atribuídos grupos<br /> de canais diferentes.</td>
+        <td>São distribuídos por <br /> sub-sistemas  que compõem<br /> a rede TETRA, incluindo as<br /> estações rádio base.
+            <br />
+        
+            distribuídos a diversos<br /> a canais e dispositivos diferentes</td>
+        <td>Da estação base,<br /> às sub-estações<br /> até a unidade usuária<br />  
+    </tr>
+    <tr>
+        <th>Tipos de Serviços</th>
+        <td>Voz, SMS, MMS e Dados</td>
+        <td>Voz, SMS e Dados</td>
+        <td>Voz, SMS, MMS e Dados</td>
+    </tr>
+</table>
+</div>
+<h1 style="background-color:red;text-align:center">Referências</h1>
+<div style="width: 100%; overflow: hidden;">
+<div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px"><a href="http://www.kofre.com.br"
+                    target="_blank">http://www.kofre.com.br</a></p>
+            </li>
+            <li>
+                <p style="font-size:20px"><a href="https://pt.wikipedia.org/wiki/Terrestrial_Trunked_Radio"
+                    target="_blank">https://pt.wikipedia.org/wiki/Terrestrial_Trunked_Radio</a></p>
+            </li>
+            <li>
+                <p style="font-size:20px"><a href="https://paginas.fe.up.pt"
+                    target="_blank">https://paginas.fe.up.pt</a></p>
+            </li>
+          </li>
+          <p style="font-size:20px"><a href="https://mobitrust-project.onesource.pt"
+            target="_blank"> https://mobitrust-project.onesource.pt</a></p>
+        </li>
+      </li>      
+    </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='tetra2.jpg')}}" alt="radiaçao"></div>
+</div>
+{% endblock %}

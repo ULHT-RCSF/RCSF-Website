@@ -1,0 +1,218 @@
+{% extends 'base.html' %}w
+{% block header %}
+<h1>{% block title %}Redes: NFC{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<h1 style="background-color:red;text-align:center">N F C</h1>
+<h2 style="text-align: center;"> O que sabemos sobre o N   F    C</h2>
+<div style="text-align: center;">
+    <img src="{{url_for('static', filename='nfc3.jpg')}}" alt="5G">
+</div>
+<h1 style="background-color:red;text-align:center">Definição e Enquadramento</h1>
+<ul>
+    <li>
+        <p style="font-size:20px">Definição: NFC é uma tecnologia que permite a troca de informações sem fio e de forma segura entre dispositivos compatíveis que estejam próximos um do outro. A especificação oficial menciona distância máxima de 10 cm, mas, na prática, o recurso é configurado para operar em raios mais curtos.</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Esta tecnologia funciona a 13.56 MHz. Ou seja, logo que os dispositivos estejam suficientemente próximos, a comunicação é estabelecida automaticamente, sem a necessidade de configurações adicionais. Estes dispositivos podem ser telefones celulares, tablets, crachás, cartões de bilhetes eletrônicos, pulseiras e qualquer outro dispositivo que tenha um chip NFC .</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Objetivos:</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Definir e desenvolver padrões, parâmetros e protocolos a serem seguidos em uma arquitetura de NFC ;</p>
+    </li>
+    <li>
+        <p style="font-size:20px">Incentivar o desenvolvimento e uso de dispositivos de NFC; </p>
+    </li>
+    <li>
+        <p style="font-size:20px">Trabalhar para garantir que os produtos sigam as normas e especificações do fórum; </p>
+    </li>
+    <li>
+        <p style="font-size:20px">Disseminar o conhecimento da NFC, para que o uso dela seja mais comum mundialmente.</p>
+    </li>
+</ul>
+<h1 style="background-color:red;text-align:center">Cobertura e Aplicabilidade </h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Esta funcionalidade é ativada nos smartphones (seja ios ou android) através de um chip, responsável por emitir e receber dados .</p>
+            </li>
+            <li>
+                <p style="font-size:20px">O NFC é tido como seguro e conveniente para o usuário porque só opera a curtas distâncias. Além de evitar intrusos na conexão, essa maneira de funcionar dispensa configurações de pareamento e permite que um dos lados da conexão não precise de energia – com a proximidade, um dos polos pode energizar o outro para estabelecer a comunicação.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Dispositivos NFC podem ser de dois tipos: ativos ou passivos. Os ativos têm fonte de energia própria e podem enviar ou receber informações – são os celulares, terminais de pagamentos e de transporte público, por exemplo.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Os passivos precisam de um chip ativo próximo para obter energia e só podem transmitir dados – esse é o caso de cartões de crédito e débito, cartão de transporte (como bilhete de comboio Lisboa-Sintra) .</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='nfc2.jpg')}}" alt="5g1">
+    </div>
+</div>
+<h1 style="background-color:red;text-align:center">Um exemplo prático</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Pagamento por aproximação:</p>
+            </li>
+            <li>
+                <p style="font-size:20px">A tecnologia NFC pode ser utilizada em numerosas aplicações, inclusive naquelas que envolvem transações financeiras. Três exemplos notáveis são os serviços Google Pay, Apple Pay e Samsung Pay: os três permitem que o usuário use seu celular para pagar contas (mobile payment) em vez do cartão de crédito ou do dinheiro em espécie.  Na hora de pagar uma conta, o usuário precisa apenas desbloquear o seu celular e aproximá-lo de um receptor, que pode ser a maquininha de cartão do caixa, por exemplo (é claro que ambos os dispositivos precisam contar com um chip NFC). Assim que a comunicação for estabelecida (demora apenas alguns poucos segundos), o celular recebe as informações referentes ao processo, como o valor total da compra. Todo o procedimento é realizado via NFC. A principal vantagem dessas plataformas é que, ao realizar transações, o usuário não precisa informar os dados do seu cartão de crédito ou débito para a loja. O próprio serviço faz a intermediação do pagamento.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align: center"><img src="{{url_for('static', filename='nfc1.jpg')}}" alt="areas5G"></div>
+</div>
+<h1 style="background-color:red;text-align:center">Aplicações</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px">Identificação de funcionários: o NFC pode ser utilizado em crachás para identificar a chegada de um funcionário à empresa ou o seu acesso a um setor específico do prédio;.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Guia turístico virtual: se o usuário estiver em um museu, pode aproximar seu celular de um receptor para ter, em seu aparelho, mais informações sobre o material em exposição;.</p>
+            </li>
+            <li>
+                <p style="font-size:20px">Publicidade: enquanto aguarda o autocarro, o usuário pode aproximar seu smartphone de um cartaz de publicidade próximo e, ao fazê-lo, obter descontos na loja do anunciante;.</p>
+            </li>
+            <li>
+                <p style="font-size:20px"> Preços em lojas: para saber o preço de um produto na prateleira ou obter mais detalhes sobre ele (como lista de ingredientes), basta aproximar o smartphone do item para informações adicionais aparecerem na tela.</p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='nfc00.jpg')}}" alt="user5g"></div>
+</div>
+</div>
+<h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        color: black;
+        background-color: red;
+        text-align: center;
+    }
+
+    table {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        color: black;
+        background-color: red;
+        text-align: center;
+    }
+
+    table {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<table>
+    <tr>
+        <td colspan=1 style="visibility:collapse">Hide</td>
+        <th>5G</th>
+        <th>TETRA</th>
+        <th>NFC</th>
+    </tr>
+    <tr>
+        <th>Bandas de frequência</th>
+        <td>100 MHz a 38 GHz</td>
+        <td>380 MHz a 430 MHz</td>
+        <td>13.56 MHz</td>
+    </tr>
+    <tr>
+        <th>Largura de banda</th>
+        <td>40 GHz</td>
+        <td>25 kHz</td>
+        <td>200 kHz</td>
+    </tr>
+    <tr>
+        <th>Técnica de acesso</th>
+        <td>MIMO</td>
+        <td>TDMA</td>
+        <td>TDMA</td>
+    </tr>
+    <tr>
+        <th>Modulação</th>
+        <td>256-QAM</td>
+        <td>DQPSK</td>
+        <td>ASK, Manchester</td>
+    </tr>
+    <tr>
+        <th>Débitos</th>
+        <td>1,8 Gbit/s</td>
+        <td>28.8 kbit/s</td> 
+        <td>848 kbit/s</td>
+    </tr>
+    <tr>
+        <th>Cobertura típica</th>
+        <td>1 a centenas de metros</td>
+        <td>1 até 30 km</td>
+        <td>1 até 10 Cm</td>
+    </tr>
+    <tr>
+        <th>Planeamento Celular</th>
+        <td>A cada estação base é<br /> atribuída um parte<br /> dos canais disponíveis e às<br /> estações bases por
+            perto<br /> são
+            atribuídos grupos<br /> de canais diferentes.</td>
+        <td>São distribuídos por <br /> sub-sistemas  que compõem<br /> a rede TETRA, incluindo as<br /> estações rádio base.
+            <br />
+        
+            distribuídos a diversos<br /> a canais e dispositivos diferentes</td>
+        <td>Da estação base,<br /> às sub-estações<br /> até a unidade usuária<br />  
+    </tr>
+    <tr>
+        <th>Tipos de Serviços</th>
+        <td>Voz, SMS, MMS e Dados</td>
+        <td>Voz, SMS e Dados</td>
+        <td>Voz, SMS, MMS e Dados</td>
+    </tr>
+</table>
+</div>
+<h1 style="background-color:red;text-align:center">Referências</h1>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">
+        <ul>
+            <li>
+                <p style="font-size:20px"><a href="https://pt.wikipedia.org/wiki/Near_Field_Communication"
+                    target="_blank">https://pt.wikipedia.org/wiki/Near_Field_Communication</a></p>
+            </li>
+            <li>
+                <p style="font-size:20px"><a href="https://www.techtudo.com.br"
+                    target="_blank">https://www.techtudo.com.br</a></p>
+            </li>
+            <li>
+                <p style="font-size:20px"><a href="https://www.infowester.com/nfc.php"
+                    target="_blank">https://www.infowester.com/nfc.php</a></p>
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left: 620px;text-align:center"><img src="{{url_for('static', filename='nfc4.jpg')}}" alt="radiaçao"></div>
+</div>
+{% endblock %}
