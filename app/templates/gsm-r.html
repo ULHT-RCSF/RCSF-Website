@@ -202,6 +202,16 @@
     <div style="margin: auto;text-align: center"><img src="{{url_for('static', filename='servicosGSMR.jpg')}}"
             alt="reutilizacaoFreq"></div>
 </div>
+<h1 style="background-color:red;text-align:center">Atenuação em Espaço Livre</h1>
+<figure class="half" style="text-align: center;margin: auto">
+    <img src="{{ url_for('static', filename=atenuacao_880) }}" alt="gráfico_atenucao_880" />
+    <img src="{{ url_for('static', filename=atenuacao_925) }}" alt="gráfico_atenucao_925" />
+</figure>
+<h1 style="background-color:red;text-align:center">Propagação em Espaço Livre</h1>
+<figure class="half" style="text-align: center;margin: auto">
+    <img src="{{ url_for('static', filename=propagacao_880) }}" alt="gráfico_propagacao_880" />
+    <img src="{{ url_for('static', filename=propagacao_925) }}" alt="gráfico_propagacao_925" />
+</figure>
 <h1 style="background-color:red;text-align:center">Tabela Resumo</h1>
 <style>
     table,
